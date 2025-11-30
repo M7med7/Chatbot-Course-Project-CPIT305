@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
 import java.util.List;
 
 import com.chatbot.model.Message;
@@ -20,6 +21,8 @@ public class FileSaver {
             for (Message msg : messages) {
                 String line = msg.toLogFormat() + "\n";
                 fos.write(line.getBytes(StandardCharsets.UTF_8));
+                byte[] bytes = line.getBytes(StandardCharsets.UTF_8);
+                System.out.println("Writing " + bytes.length + " bytes to stream: " + Arrays.toString(bytes)); 
             }
 
             String footer = "\n--- END OF LOG ---";

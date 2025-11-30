@@ -52,7 +52,6 @@ public class ChatController {
         Task<String> apiTask = new Task<>() {
             @Override
             protected String call() throws Exception {
-
                 return geminiService.getResponse(userText);
             }
         };
