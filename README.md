@@ -34,7 +34,7 @@ This project was built as a **CPIT-305** course project to demonstrate core soft
 | Language   | Java 21                               |
 | Frontend   | JavaFX (FXML)                         |
 | Build Tool | Maven                                 |
-| AI Layer   | LangChain4j + Google Gemini 1.5 Flash |
+| AI Layer   | LangChain4j + Google Gemini 2.0 Flash |
 | IDE        | VS Code / IntelliJ IDEA               |
 
 ---
@@ -120,27 +120,10 @@ mvn clean javafx:run
 
 ---
 
-## 🐛 Troubleshooting
-
-**Issue:** `package javafx.application does not exist`
-**Fix:** Run with Maven: `mvn clean javafx:run`.
-
-**Issue:** `CRITICAL: GEMINI_API_KEY not set`
-**Fix:** Set the environment variable.
-
-**Issue:** `duplicate class: main.java.chatbot.model.Message`
-**Fix:** Ensure package name is:
-
-```
-package com.chatbot.model;
-```
-
----
 
 ## 🔒 Security Best Practices
 
 * Store API keys using environment variables
-* `.gitignore` includes `.idea/`, `.vscode/`, `target/`
 * Error dialogs avoid exposing stack traces
 
 ---
