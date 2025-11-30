@@ -2,7 +2,7 @@
 
 A desktop chatbot application built with **Java 21** and **JavaFX**, integrated with the **Google Gemini AI model**.
 
-This project was built as a **CPIT-305** course project to demonstrate core software engineering concepts such as **Multithreading**, **File I/O Streams**, **MVC Architecture**, and **Exception Handling**.
+This project was built as a **CPIT-305** course project to demonstrate core software  concepts such as **Multithreading**, **File I/O Streams**, **MVC Architecture**, and **Exception Handling**.
 
 ---
 
